@@ -20,8 +20,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 mb-32">
           <div className="lg:col-span-5">
             <div className="mb-12">
-              <span className="text-4xl font-serif italic text-white tracking-tight block mb-2">Mabel's</span>
-              <span className="text-[8px] tracking-[0.8em] uppercase text-amber-500 font-bold ml-1">Sojourn Group</span>
+              <span className="text-4xl font-serif italic text-white tracking-tight block mb-2">Kay's Place</span>
+              <span className="text-[8px] tracking-[0.8em] uppercase text-amber-500 font-bold ml-1">Apartments</span>
             </div>
             
             <p className="text-xl font-light leading-relaxed text-stone-400 max-w-md mb-12">
@@ -103,13 +103,13 @@ const Footer = () => {
                   <div className="w-8 h-8 rounded-full border border-stone-800 flex items-center justify-center group-hover:border-amber-500 transition-colors">
                     <Phone size={12} className="group-hover:text-amber-500" />
                   </div>
-                  <span className="text-[11px] tracking-widest text-stone-300">+234 800 SOJOURN</span>
+                  <span className="text-[11px] tracking-widest text-stone-300">+234 800 kays</span>
                 </a>
-                <a href="mailto:concierge@mabelssojourn.com" className="flex items-center space-x-4 group">
+                <a href="mailto:concierge@kaysapartments.com" className="flex items-center space-x-4 group">
                   <div className="w-8 h-8 rounded-full border border-stone-800 flex items-center justify-center group-hover:border-amber-500 transition-colors">
                     <Mail size={12} className="group-hover:text-amber-500" />
                   </div>
-                  <span className="text-[11px] tracking-widest text-stone-300">concierge@mabels.com</span>
+                  <span className="text-[11px] tracking-widest text-stone-300">concierge@kaysapartments.com</span>
                 </a>
               </div>
             </div>
@@ -140,7 +140,7 @@ const Footer = () => {
               </div>
               
               <div className="flex items-center space-x-8 text-[9px] uppercase tracking-[0.3em] font-bold">
-                <span className="text-stone-700">© {currentYear} Mabel's Sojourn Group</span>
+                <span className="text-stone-700">© {currentYear} Kay's Place Apartments</span>
                 <a href="#" className="text-stone-500 hover:text-white transition-colors">Privacy</a>
                 <div className="flex items-center space-x-2 text-stone-300">
                   <Globe size={10} className="text-amber-600" />

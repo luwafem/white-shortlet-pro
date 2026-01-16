@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { 
   ChevronLeft, Star, MapPin, Bed, Bath, Users, 
-  CheckCircle, Shield, Share2, Heart, ArrowRight
+  CheckCircle, Shield, Share2, Heart
 } from 'lucide-react';
 import apartmentsData from '../data/apartmentsData';
 
@@ -36,9 +36,9 @@ const ApartmentDetails = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFCFB]">
+    <div className="min-h-screen bg-[#FDFCFB] ">
       {/* 01. Minimal Navigation Bar */}
-      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-stone-100">
+      <nav className=" mt-40 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-stone-100">
         <div className="max-w-[1800px] mx-auto px-8 lg:px-12 py-5 flex justify-between items-center">
           <button onClick={() => navigate(-1)} className="group flex items-center space-x-3 text-stone-900">
             <ChevronLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
@@ -58,7 +58,8 @@ const ApartmentDetails = () => {
         </div>
       </nav>
 
-      <div className="max-w-[1800px] mx-auto px-8 lg:px-12 py-12">
+      {/* CHANGED: Added pt-28 to offset the fixed navbar height */}
+      <div className="max-w-[1800px] mx-auto px-8 lg:px-12 pt-28 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           
           {/* LEFT: GALLERY & NARRATIVE */}
@@ -73,7 +74,7 @@ const ApartmentDetails = () => {
               />
               <div className="absolute top-8 left-8">
                 <span className="bg-stone-900 text-white text-[8px] tracking-[0.5em] uppercase px-5 py-2.5 font-bold">
-                  Signature Label
+                   Signature Label
                 </span>
               </div>
             </div>
@@ -143,8 +144,8 @@ const ApartmentDetails = () => {
               <div className="flex justify-between items-center mb-12">
                 <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-stone-900">Curated Provisions</h3>
                 <button 
-                  onClick={() => setShowAllAmenities(!showAllAmenities)}
-                  className="text-[9px] font-bold tracking-[0.3em] text-stone-400 hover:text-amber-600 transition-colors uppercase underline underline-offset-8"
+                   onClick={() => setShowAllAmenities(!showAllAmenities)}
+                   className="text-[9px] font-bold tracking-[0.3em] text-stone-400 hover:text-amber-600 transition-colors uppercase underline underline-offset-8"
                 >
                   {showAllAmenities ? 'Minimize List' : 'View Full Inventory'}
                 </button>
@@ -166,9 +167,9 @@ const ApartmentDetails = () => {
             <div className="sticky top-32">
               <div className="bg-white border border-stone-100 p-10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)]">
                 <div className="mb-10 text-center border-b border-stone-50 pb-10">
-                  <p className="text-[9px] tracking-[0.4em] text-stone-400 uppercase mb-4">Investment Per Night</p>
-                  <div className="text-5xl font-light text-stone-900 mb-2">{formatPrice(apartment.price)}</div>
-                  <p className="text-[9px] tracking-[0.2em] text-stone-400 uppercase font-medium">All-Inclusive Luxury Service</p>
+                   <p className="text-[9px] tracking-[0.4em] text-stone-400 uppercase mb-4">Investment Per Night</p>
+                   <div className="text-5xl font-light text-stone-900 mb-2">{formatPrice(apartment.price)}</div>
+                   <p className="text-[9px] tracking-[0.2em] text-stone-400 uppercase font-medium">All-Inclusive Luxury Service</p>
                 </div>
 
                 <div className="space-y-6 mb-10">
@@ -219,7 +220,6 @@ const ApartmentDetails = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -42,10 +42,10 @@ const Navbar = () => {
             {/* Logo Section - Higher z-index to stay above menu */}
             <Link to="/" className="relative z-[130] flex flex-col group">
               <span className="text-xl md:text-2xl font-serif italic text-white tracking-tight leading-none">
-                Mabel's
+                Kay's Place
               </span>
               <span className="text-[7px] tracking-[0.6em] uppercase text-amber-500 font-bold ml-0.5 mt-1 transition-all group-hover:tracking-[0.8em]">
-                Sojourn
+                Apartments
               </span>
             </Link>
 
